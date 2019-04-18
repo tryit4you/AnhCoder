@@ -16,6 +16,6 @@ namespace AnhCoder.Data.Models
         [ForeignKey("OrderId")]
         public virtual Order Order { get; set; }
         [ForeignKey("ProductServiceId")]
-        public virtual ProductServices ProductServices { get; set; }
+        public virtual ProductService ProductServices { get; set; }
     }
 }

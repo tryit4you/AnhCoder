@@ -27,7 +27,7 @@ namespace AnhCoder.Data.Models
             session.SetString("CartId", cartId);
             return new ShoppingCart(context) { ShoppingCartId = cartId };
         }
-        public void AddToCart(ProductServices product,int amount)
+        public void AddToCart(ProductService product,int amount)
         {
             var shoppingCartItem = _context.ShoppingCartItems.SingleOrDefault(s => s.ProductService.Id == product.Id && s.ShoppingCartId == ShoppingCartId);
             if (shoppingCartItem == null)
@@ -46,7 +46,7 @@ namespace AnhCoder.Data.Models
             }
             _context.SaveChanges(); 
         }
-        public int RemoveFromCart(ProductServices product)
+        public int RemoveFromCart(ProductService product)
         {
             var shoppingCartIte = _context.ShoppingCartItems.SingleOrDefault(s => s.ProductService.Id == product.Id && s.ShoppingCartId == ShoppingCartId);
             var localAmount = 0;

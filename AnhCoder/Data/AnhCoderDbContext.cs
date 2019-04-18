@@ -19,7 +19,7 @@ namespace AnhCoder.Data
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Evaluation> Evaluations { get; set; }
         public virtual DbSet<FeedBack> FeedBacks { get; set; }
-        public virtual DbSet<ProductServices> ProductServices { get; set; }
+        public virtual DbSet<ProductService> ProductServices { get; set; }
         public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<Slide> Slides { get; set; }
         public virtual DbSet<Page> Pages { get; set; }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AnhCoder.Data.Models
 {
-    public class ProductServices
+    public class ProductService
     {
         public string Id { get; set; }
         public string Name { get; set; }

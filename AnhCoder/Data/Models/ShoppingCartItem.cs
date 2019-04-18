@@ -8,7 +8,7 @@ namespace AnhCoder.Data.Models
     public class ShoppingCartItem
     {
         public string Id { get; set; }
-        public ProductServices ProductService { get; set; }
+        public ProductService ProductService { get; set; }
         public int Amount { get; set; }
         public string ShoppingCartId { get; set; }
         
